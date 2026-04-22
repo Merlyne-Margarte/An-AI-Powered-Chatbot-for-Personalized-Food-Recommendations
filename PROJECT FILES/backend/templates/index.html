@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CulinAIry</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--<link rel="icon" type="image/png" href="/static/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/static/favicon.svg" />
+<link rel="shortcut icon" href="/static/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" />
+<link rel="manifest" href="/static/site.webmanifest" />-->
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="icon" href="/static/favicon_cropped.ico">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<button id="chatbot-toggler">💬</button>
+
+<div class="chatbot">
+
+<div class="chat-header">
+
+<div class="bot-info">
+<img src="/static/png favicon.png" class="bot-icon">
+<span>CulinAIry</span>
+</div>
+
+<button id="close-btn">✖</button>
+
+</div>
+
+<div class="chat-body" id="chatBody">
+
+<div class="message bot">
+👋 Hey there! <br>
+I'm your AI food assistant.<br>
+What's your name?
+</div>
+
+</div>
+
+<div class="quick-actions">
+
+<button class="chip">Suggest dinner</button>
+<button class="chip">Meal Plan</button>
+<button class="chip">Nutrition summary</button>
+<button class="chip">Benefits</button>
+
+</div>
+
+<div class="chat-footer">
+
+<input
+type="text"
+id="userInput"
+placeholder="Ask something like 'veg spicy dinner'"
+>
+
+<button id="sendBtn">➤</button>
+
+</div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
